@@ -1,0 +1,11 @@
+{
+  "name": "second-pair",
+  "version": "0.1.0",
+  "description": "A second pair of eyes for Claude Code: Codex (and optionally Gemini) review everything Claude changed in a session, in the background, stopping after two blocking rounds in a row; Claude can also hand Codex tasks that run in their own worktree and branch.",
+  "author": {
+    "name": "arcbaslow"
+  },
+  "repository": "https://github.com/arcbaslow/second-pair",
+  "license": "MIT",
+  "keywords": ["codex", "gemini", "code-review", "cross-model", "worktree", "hooks", "multi-agent"]
+}

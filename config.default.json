@@ -1,0 +1,31 @@
+{
+  "denylist": [],
+  "codex": {
+    "bin": null,
+    "model": null,
+    "taskEffort": "high",
+    "reviewEffort": "medium",
+    "taskTimeoutMin": 45,
+    "reviewTimeoutMin": 12
+  },
+  "review": {
+    "enabled": true,
+    "agents": ["codex"],
+    "wakeOn": ["P0", "P1", "P2"],
+    "maxRounds": 2,
+    "ignore": ["package-lock.json", "pnpm-lock.yaml", "yarn.lock", "bun.lockb", "Cargo.lock", "poetry.lock", "uv.lock"],
+    "skipPaths": [],
+    "maxUntracked": 200
+  },
+  "worktrees": {
+    "root": null,
+    "linkDirs": ["node_modules"]
+  },
+  "gemini": {
+    "agyBin": null,
+    "model": null,
+    "reviewModel": null,
+    "taskTimeoutMin": 30,
+    "reviewTimeoutMin": 12
+  }
+}

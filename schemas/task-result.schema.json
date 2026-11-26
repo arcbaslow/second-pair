@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "summary", "report", "files_changed", "checks_run", "open_questions"],
+  "properties": {
+    "status": { "type": "string", "enum": ["done", "partial", "blocked"] },
+    "summary": { "type": "string" },
+    "report": { "type": "string", "description": "The full answer or findings in Markdown. For implementation tasks: what changed and why, per requirement." },
+    "files_changed": { "type": "array", "items": { "type": "string" } },
+    "checks_run": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["command", "passed", "note"],
+        "properties": {
+          "command": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "open_questions": { "type": "array", "items": { "type": "string" } }
+  }
+}

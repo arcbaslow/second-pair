@@ -1,0 +1,14 @@
+{
+  "name": "second-pair",
+  "description": "Cross-model review and Codex task delegation for Claude Code.",
+  "owner": {
+    "name": "arcbaslow"
+  },
+  "plugins": [
+    {
+      "name": "second-pair",
+      "source": "./",
+      "description": "Codex and Gemini review what Claude changed, stopping after two blocking rounds in a row; Codex tasks run in their own worktree."
+    }
+  ]
+}
